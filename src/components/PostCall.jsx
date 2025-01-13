@@ -30,17 +30,17 @@ const PostCall = () => {
       <div>{message}</div>
       {/* {apiData.map((item, ind) => {
         return ( */}
-      <div key={ind}>
+      <div>
         <div className="card" style={{ width: "18rem" }}>
           <div className="card-body">
-            <h5 className="card-title">{item.email}</h5>
+            <h5 className="card-title">{apiData.email}</h5>
             <h6 className="card-subtitle mb-2 text-body-secondary">
-              {item.firstName}
+              {apiData.firstName}
             </h6>
             <h6 className="card-subtitle mb-2 text-body-secondary">
-              {item.lastName}
+              {apiData.lastName}
             </h6>
-            <p className="card-text">{item.designation}</p>
+            <p className="card-text">{apiData.designation}</p>
           </div>
         </div>
       </div>
