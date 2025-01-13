@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useState } from "react";
 
 const PostCall = () => {
-  const [apiData, setApiData] = useState([]);
+  const [apiData, setApiData] = useState({});
   const [message, setMessage] = useState();
 
   const handleClick = () => {
@@ -28,24 +28,24 @@ const PostCall = () => {
       <div>post call data</div>
       <button onClick={handleClick}>Create Employee</button>
       <div>{message}</div>
-      {apiData.map((item, ind) => {
-        return (
-          <div key={ind}>
-            <div className="card" style={{ width: "18rem" }}>
-              <div className="card-body">
-                <h5 className="card-title">{item.email}</h5>
-                <h6 className="card-subtitle mb-2 text-body-secondary">
-                  {item.firstName}
-                </h6>
-                <h6 className="card-subtitle mb-2 text-body-secondary">
-                  {item.lastName}
-                </h6>
-                <p className="card-text">{item.designation}</p>
-              </div>
-            </div>
+      {/* {apiData.map((item, ind) => {
+        return ( */}
+      <div key={ind}>
+        <div className="card" style={{ width: "18rem" }}>
+          <div className="card-body">
+            <h5 className="card-title">{item.email}</h5>
+            <h6 className="card-subtitle mb-2 text-body-secondary">
+              {item.firstName}
+            </h6>
+            <h6 className="card-subtitle mb-2 text-body-secondary">
+              {item.lastName}
+            </h6>
+            <p className="card-text">{item.designation}</p>
           </div>
-        );
-      })}
+        </div>
+      </div>
+      {/* );
+      })} */}
     </div>
   );
 };
