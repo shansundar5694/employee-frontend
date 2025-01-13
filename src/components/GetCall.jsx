@@ -9,7 +9,8 @@ const GetCall = () => {
   }, []);
   const fetchData = () => {
     axios
-      .get("http://localhost:4000/api/empget")
+      // .get("http://localhost:4000/api/empget")
+      .get("https://employee-second-crud.onrender.com/api/empget")
       .then((res) => {
         setApiData(res.data.data), setMessage(res.data.message);
       })

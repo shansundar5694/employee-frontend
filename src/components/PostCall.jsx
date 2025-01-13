@@ -13,7 +13,11 @@ const PostCall = () => {
       designation: "dev",
     };
     axios
-      .post("http://localhost:4000/api/create-employee", payload)
+      //   .post("http://localhost:4000/api/create-employee", payload)
+      .post(
+        "https://employee-second-crud.onrender.com/api/create-employee",
+        payload
+      )
       .then((res) => {
         setApiData(res.data.data), setMessage(res.data.message);
       })

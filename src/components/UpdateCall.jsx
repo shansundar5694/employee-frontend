@@ -14,6 +14,10 @@ const Update = () => {
     const email = "shans@gmail.com";
     axios
       .put(`http://localhost:4000/api/editemp/${email}`, payload)
+      .put(
+        `https://employee-second-crud.onrender.com/api/editemp/${email}`,
+        payload
+      )
       .then((res) => {
         setApiData(res.data.data), setMessage(res.data.message);
       })
