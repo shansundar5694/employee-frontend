@@ -1,14 +1,14 @@
 import React from "react";
-// import GetCall from "./components/GetCall";
-// import PostCall from "./components/PostCall";
+import GetCall from "./components/GetCall";
+import PostCall from "./components/PostCall";
 import Update from "./components/UpdateCall";
 
 const App = () => {
   return (
     <div>
       App component
-      {/* <GetCall />
-      <PostCall /> */}
+      <GetCall />
+      <PostCall />
       <Update />
     </div>
   );
